@@ -77,7 +77,7 @@ export default {
   methods: {
     getPdf () {
       var self = this;
-      self.pdfdata = pdfvuer.createLoadingTask('http://africau.edu/images/default/sample.pdf');
+      self.pdfdata = pdfvuer.createLoadingTask('https://arkokoley.github.io/pdfvuer/nationStates.pdf');
       self.pdfdata.then(pdf => {
         self.numPages = pdf.numPages;
         window.onscroll = function() { 
